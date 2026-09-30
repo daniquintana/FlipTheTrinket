@@ -1,8 +1,13 @@
+![Flip The Trinket](images/header.jpeg)
+
 # Flip The Trinket
 
-A [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) mod for Stardew Valley that replaces the Fairy Box trinket's fairy companion with Flippy the flipping finger.
+Flip The Trinket replaces the Fairy Trinket's flying fairy companion with a custom figure: Flippy, the flying flipping finger. (I've made this for a couple of friends.)
+
+A [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) mod for Stardew Valley.
 
 - **Nexus Mods:** https://www.nexusmods.com/stardewvalley/mods/50653
+- **Download:** [latest release](https://github.com/daniquintana/FlipTheTrinket/releases/latest)
 - **Requires:** [SMAPI](https://smapi.io) and Content Patcher
 
 ## Install
