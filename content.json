@@ -1,0 +1,109 @@
+{
+  "Format": "2.8.0",
+  "Changes": [
+    {
+      "LogName": "Replace Fairy 1",
+      "Action": "EditImage",
+      "Target": "TileSheets/companions",
+      "FromFile": "assets/middle-f_16x64_all_20260925.png",
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 16
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Replace Fairy 2",
+      "Action": "EditImage",
+      "Target": "TileSheets/companions",
+      "FromFile": "assets/middle-f_16x64_all_20260925.png",
+      "ToArea": {
+        "X": 64,
+        "Y": 0,
+        "Width": 64,
+        "Height": 16
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Replace Fairy 3",
+      "Action": "EditImage",
+      "Target": "TileSheets/companions",
+      "FromFile": "assets/middle-f_16x64_all_20260925.png",
+      "ToArea": {
+        "X": 128,
+        "Y": 0,
+        "Width": 64,
+        "Height": 16
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Replace Fairy 4",
+      "Action": "EditImage",
+      "Target": "TileSheets/companions",
+      "FromFile": "assets/middle-f_16x64_all_20260925.png",
+      "ToArea": {
+        "X": 192,
+        "Y": 0,
+        "Width": 64,
+        "Height": 16
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Replace Fairy 5",
+      "Action": "EditImage",
+      "Target": "TileSheets/companions",
+      "FromFile": "assets/middle-f_16x64_all_20260925.png",
+      "ToArea": {
+        "X": 0,
+        "Y": 176,
+        "Width": 64,
+        "Height": 16
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Replace Fairy 6",
+      "Action": "EditImage",
+      "Target": "TileSheets/companions",
+      "FromFile": "assets/middle-f_16x64_all_20260925.png",
+      "ToArea": {
+        "X": 64,
+        "Y": 176,
+        "Width": 64,
+        "Height": 16
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Replace Fairy 7",
+      "Action": "EditImage",
+      "Target": "TileSheets/companions",
+      "FromFile": "assets/middle-f_16x64_all_20260925.png",
+      "ToArea": {
+        "X": 128,
+        "Y": 176,
+        "Width": 64,
+        "Height": 16
+      },
+      "PatchMode": "Replace"
+    },
+    {
+      "LogName": "Replace Fairy 8",
+      "Action": "EditImage",
+      "Target": "TileSheets/companions",
+      "FromFile": "assets/middle-f_16x64_all_20260925.png",
+      "ToArea": {
+        "X": 192,
+        "Y": 176,
+        "Width": 64,
+        "Height": 16
+      },
+      "PatchMode": "Replace"
+    }
+  ]
+}

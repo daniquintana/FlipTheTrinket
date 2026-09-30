@@ -1,0 +1,14 @@
+# macOS Finder metadata
+.DS_Store
+
+# Release zips are built from these files, so they don't need to be tracked
+*.zip
+
+# Editor and temp files
+*.swp
+*~
+.vscode/
+.idea/
+
+# Claude Code local settings
+.claude/

@@ -1,0 +1,11 @@
+{
+  "Name": "Flip The Trinket",
+  "Author": "Dani Quintana",
+  "Version": "1.2.1",
+  "Description": "Replaces the fairy trinket sprite with Flippy the flipping finger.",
+  "UniqueID": "DaniQuintana.FlipTheTrinket",
+  "UpdateKeys": [ "Nexus:50653" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
