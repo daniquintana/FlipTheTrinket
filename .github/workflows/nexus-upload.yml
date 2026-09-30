@@ -1,0 +1,39 @@
+# Uploads the mod to Nexus Mods whenever a GitHub release is published.
+# Needs the NEXUSMODS_API_KEY secret and the NEXUS_FILE_ID variable in the repo settings.
+name: Upload to Nexus Mods
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  nexus-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get version from tag
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Check manifest.json version matches the tag
+        run: |
+          manifest_version=$(jq -r .Version manifest.json)
+          if [ "$manifest_version" != "${{ steps.version.outputs.version }}" ]; then
+            echo "manifest.json says $manifest_version but the release tag is ${{ steps.version.outputs.version }}"
+            exit 1
+          fi
+
+      - name: Build mod zip
+        run: git archive --prefix="[CP] FlipTheTrinket/" -o "FlipTheTrinket-${{ steps.version.outputs.version }}.zip" HEAD manifest.json content.json assets
+
+      - name: Upload to Nexus Mods
+        uses: Nexus-Mods/upload-action@v1.0.0-beta.10
+        with:
+          api_key: ${{ secrets.NEXUSMODS_API_KEY }}
+          file_id: ${{ vars.NEXUS_FILE_ID }}
+          mod_id: 50653
+          filename: FlipTheTrinket-${{ steps.version.outputs.version }}.zip
+          version: ${{ steps.version.outputs.version }}
+          update_mod_version: true
+          changelog: ${{ github.event.release.body }}
